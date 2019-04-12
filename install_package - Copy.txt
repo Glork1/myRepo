@@ -1,0 +1,41 @@
+INSTALL PACKAGE
+
+pip install numpy --upgrade --proxy=http://nom.du.proxy:port --user for example port = 8080
+
+CREATE VIRTUALENV (https://packaging.python.org/guides/installing-using-pip-and-virtualenv/)
+
+virtualenv ENV (create a virtualenv in C://...//ENV)
+
+ACTIVATE IT
+
+.\env\Scripts\activate
+
+CONFIRMING THE VERSION OF PYTHON
+
+where python
+
+LEAVING VIRTUALENV
+
+deactivate
+
+INSTALL PACKAGE
+
+pip install numpy --upgrade --proxy=http://nom.du.proxy:port
+
+RUN SPYDER USING A VIRTUALENV
+
+	conda create -n myenv python=3.4 anaconda <- useless ifalready created
+
+	activate myenv
+
+	CHECK CURRENT ENVIRONMENT HAS BEEN CHANGED
+
+	conda info -e
+
+	MAKE SURE TO HAVE SPYDER IN THAT ENVIRONMENT
+
+	conda install -n myenv spyder 
+
+	RUN SPYDER IN THAT ENVIRONMENT
+	
+	spyder
